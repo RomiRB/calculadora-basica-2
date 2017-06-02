@@ -1,0 +1,48 @@
+
+#container{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: 20px auto;
+	background-color: #fe0036;
+	border-radius: 40px;
+	width: 30%;
+	height: 300px;
+	
+}
+
+
+h2 {
+	color: white;
+	width: 80%;
+	font-family: Arial;
+	margin: auto;
+	
+}
+
+form{
+	
+	padding:20px;
+	width: 100%;
+	/*margin-left: 120px;*/
+	margin: auto;
+}
+
+input{
+	background-color: #feb2c2;
+	border-radius: 20px;
+	width: 30%;
+	height: 25px;
+	border-color: cyan;
+
+
+
+}
+
+.boton{
+	background-color: white;
+	width: 90px;
+	height: 30px;
+	border-radius: 20px;
+
+}

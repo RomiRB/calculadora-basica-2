@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>ejercicio sumar, restar, multiplicar y dividir</title>
+	
+</head>
+<body>
+	<div id="container">
+		<form>
+			<h2> Calculadora Feliz!!! </h2>
+				<br>
+				<br>
+				
+					<!--......................SUMAR.........................-->
+
+					<input type="text" id="numero1" name="num1" placeholder="  1er número">
+					<input type="text" id="numero2" name="num2" placeholder="  2do número">
+					<input type="button" value="sumar" class="boton" onclick="alert(suma(document.getElementById('numero1').value,document.getElementById('numero2').value));">  
+					
+				<br>
+				<br>
+					<!--......................RESTA.........................-->
+
+					<input type="text" id="numero3"	name="num3" placeholder="  1er número">
+					<input type="text" id="numero4" name="num4" placeholder="  2do número">
+					<input type="button" value="resta" class="boton" onclick="alert(resta(document.getElementById('numero3').value,document.getElementById('numero4').value));">
+
+				<br>
+				<br>
+					<!--..................MULTIPLICAR........................-->
+
+					<input type="text" id="numero5" name="num5" placeholder="  1er número">
+					<input type="text" id="numero6" name="num6" placeholder="  2do número">
+					<input type="button" value="multiplicacion" class="boton" onclick="alert(multiplicación(document.getElementById('numero5').value,document.getElementById('numero6').value));">
+
+				<br>
+				<br>
+					<!--.......................DIVIDIR.........................-->
+
+					<input type="text" id="numero7" name="num7" placeholder="  1er número">
+					<input type="text" id="numero8" name="num8" placeholder="  2do número">
+					<input type="button" value="division" class="boton" onclick="alert(división(document.getElementById('numero7').value,document.getElementById('numero8').value));">
+		</form>
+	</div>
+	<script type="text/javascript">
+
+
+		//..........................SUMAR.........................
+
+		
+			var suma= function(numero1, numero2){
+					var numero1=parseFloat(numero1);
+					var numero2=parseFloat(numero2);
+
+					numero1=parseFloat(numero1);
+					numero2=parseFloat(numero2);
+
+					if(isNaN(numero1)|| isNaN(numero2)){
+						resultado="usted ha ingresado letras!. Ingrese sólo números.";
+						return resultado;
+					}else{
+						resultado= numero1 +numero2;
+						return resultado;
+					}
+				}
+
+		//...........................RESTA........................
+
+		var resta= function(numero3, numero4){
+			var numero3=parseFloat(numero3);
+			var numero4=parseFloat(numero4);
+			
+			numero3=parseFloat(numero3);
+			numero4=parseFloat(numero4);
+
+			if(isNaN(numero3)|| isNaN(numero4)){
+				resultado="usted ha ingresado letras!. Ingrese sólo números.";
+				return resultado;
+			}else{
+				resultado= numero3-numero4;
+				return resultado;
+			}
+		}
+
+		//.........................MULTIPLICAR........................
+
+		var multiplicación= function(numero5, numero6){
+			var numero5=parseFloat(numero5);
+			var numero6=parseFloat(numero6);
+
+			numero5=parseFloat(numero5);
+			numero6=parseFloat(numero6);
+
+			if(isNaN(numero5)|| isNaN(numero6)){
+				resultado="usted ha ingresado letras!. Ingrese sólo números.";
+				return resultado;
+			}else{
+				resultado= numero5*numero6;
+				return resultado;
+			}
+
+		}
+
+		//...........................DIVIDIR.........................
+
+		var división= function(numero7, numero8){
+			var numero7=parseFloat(numero7);
+			var numero8=parseFloat(numero8);
+
+			numero7=parseFloat(numero7);
+			numero8=parseFloat(numero8);
+
+			
+
+			if(isNaN(numero7)|| isNaN(numero8)){
+				resultado="usted ha ingresado letras u otro carácter!. Ingrese sólo números.";
+				return resultado;
+			}else if(numero8==0){
+				resultado="Error división por cero";
+				return resultado;
+				}else{
+					resultado= numero7/numero8;
+					return resultado;
+			}
+	    }
+
+	</script>
+	
+</body>
+</html>
